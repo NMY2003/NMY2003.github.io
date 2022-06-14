@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodlist</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Hi+Melody&display=swap');
+        section
+        {
+            width: 1018px;
+            height: 550px;
+            border: 0px solid red;
+        }
+        .page
+        {
+            margin: auto;
+            background-color: #fdf5ec;
+        }
+        div
+        {
+            font-size: 25px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        a
+        {
+            text-decoration: none;
+            color: inherit;
+        }
+        .food1
+        {
+            box-sizing: content-box; 
+            width: 320px; 
+            height: 151px;
+            margin-top: 0px; 
+            margin-left: 9px;
+            margin-right: 0px;
+            padding-top: 115px; 
+            padding-bottom: 0px;
+            border: 2px solid rgb(255, 224, 189); 
+            text-align: center;
+            background-image: url('./1foodinside/spotato.png');
+            opacity: 80%;
+            background-size: 400px;
+            background-position: center;
+            display: inline-block;
+        }
+        .food1:hover
+        {
+            opacity:50%;
+        }
+        .food2
+        {
+            box-sizing:content-box; 
+            width: 320px; 
+            height: 151px; 
+            margin-top: 0px;
+            margin-left: 9px;
+            margin-right: 0px;
+            padding-top: 115px; 
+            padding-bottom: 0px;
+            border: 2px solid rgb(255, 207, 151); 
+            text-align: center;
+            background-image: url('./1foodinside/eggrice.png');
+            opacity: 80%;
+            background-size: 450px;
+            background-position: left;
+            display: inline-block;
+        }
+        .food2:hover 
+        {
+            opacity: 50%;
+        }
+        .food3
+        {
+            box-sizing:content-box; 
+            width: 320px; 
+            height: 151px; 
+            margin-top: 0px;
+            margin-left: 9px;
+            margin-right: 0px;
+            padding-top: 115px; 
+            padding-bottom: 0px;
+            border: 2px solid rgb(255, 218, 175); 
+            text-align: center;
+            background-image: url('./1foodinside/rusk.png');
+            opacity: 80%;
+            background-size: 560px;
+            background-position: -120px -50px;
+            display: inline-block;
+        }
+        .food3:hover
+        {
+            opacity: 50%;
+        }
+        .food4
+        {
+            box-sizing:content-box;
+            width: 320px; 
+            height: 151px; 
+            margin-top: 10px; 
+            margin-left: 9px;
+            margin-right: 0px;
+            padding-top: 115px; 
+            padding-bottom: 0px;
+            border: 2px solid rgb(255, 204, 145);
+            text-align: center;
+            background-image: url('./1foodinside/meat.jpg');
+            opacity: 80%;
+            background-size: 600px;
+            background-position: -150px -200px;
+            display: inline-block;
+        }
+        .food4:hover
+        {
+            opacity: 50%;
+        }
+        .food5
+        {
+            box-sizing:content-box; 
+            width: 320px; 
+            height: 151px; 
+            margin-top: 10px; 
+            margin-left: 9px;
+            margin-right: 0px;
+            padding-top: 115px; 
+            padding-bottom: 0px;
+            border: 2px solid rgb(255, 220, 181);
+            text-align: center;
+            background-image: url('./1foodinside/tteok.png');
+            opacity: 80%;
+            background-size: 450px;
+            background-position: -90px center;
+            display: inline-block;
+        }
+        .food5:hover
+        {
+            opacity: 50%;
+        }
+        .food6
+        {
+            box-sizing:content-box; 
+            width: 320px; 
+            height: 151px; 
+            margin-top: 10px; 
+            margin-left: 9px;
+            margin-right: 0px;
+            padding-top: 115px; 
+            padding-bottom: 0px;
+            border: 2px solid rgb(255, 204, 145);
+            text-align: center;
+            background-image: url('./1foodinside/rice.png');
+            opacity: 80%;
+            background-size: 450px;
+            background-position: -45px center;
+            display: inline-block;
+        }
+        .food6:hover
+        {
+            opacity: 50%
+        }
+        .span1
+        {
+            box-sizing: content-box; 
+            text-align: center;
+            padding-left: 102px;
+            padding-right: 102px;
+            padding-top: 120px; 
+            padding-bottom: 120px;
+            border: 0px solid red;
+            color:rgb(110, 26, 0);
+            font-family: Gugi;
+            opacity: 0;
+        }
+        .span1:hover
+        {
+            opacity: 100%;
+        }
+        .span2
+        {
+            box-sizing: content-box; 
+            text-align: center;
+            padding-left: 106px;
+            padding-right: 106px;
+            padding-top: 120px; 
+            padding-bottom: 120px;
+            border: 0px solid red;
+            color:rgb(66, 20, 5);
+            font-family: Gugi;
+            opacity: 0;
+        }
+        .span2:hover
+        {
+            opacity: 100%;
+        }
+        .span3
+        {
+            box-sizing: content-box; 
+            text-align: center;
+            padding-left: 127px;
+            padding-right: 127px;
+            padding-top: 120px; 
+            padding-bottom: 120px;
+            border: 0px solid red;
+            color:rgb(46, 11, 0);
+            font-family: Gugi;
+            opacity: 0;
+        }
+        .span3:hover
+        {
+            opacity: 100%;
+        }
+        .span4
+        {
+            box-sizing: content-box; 
+            text-align: center;
+            padding-left: 114px;
+            padding-right: 114px;
+            padding-top: 120px; 
+            padding-bottom: 120px;
+            border: 0px solid rgb(255, 0, 0);
+            color:rgb(22, 1, 1);
+            font-family: Gugi;
+            opacity: 0;
+        }
+        .span4:hover
+        {
+            opacity: 100%;
+        }
+        .span5
+        {
+            box-sizing: content-box; 
+            text-align: center;
+            padding-left: 124px;
+            padding-right: 125px;
+            padding-top: 120px; 
+            padding-bottom: 120px;
+            border: 0px solid rgb(255, 0, 0);
+            color:rgb(51, 0, 4);
+            font-family: Gugi;
+            opacity: 0;
+        }
+        .span5:hover
+        {
+            opacity: 100%;
+        }
+        .span6
+        {
+            box-sizing: content-box; 
+            text-align: center;
+            padding-left: 82px;
+            padding-right: 82px;
+            padding-top: 100px; 
+            padding-bottom: 120px;
+            border: 0px solid red;
+            color:#1f0900;
+            font-family: Gugi;
+            opacity: 0;
+        }
+        .span6:hover
+        {
+            opacity: 100%;
+        }
+    </style>
+</head>
+<body class="page">
+    <section>
+    <a href="1foodinside/spotato.html" target="_parent"><div class="food1"><span class="span1">고구마맛탕</span></div></a>
+    <a href="1foodinside/eggrice.html" target="_parent"><div class="food2"><span class="span2">오므라이스</span></div></a>
+    <a href="1foodinside/rusk.html" target="_parent"><div class="food3"><spa class="span3">러스크</span></div></a>
+    <a href="1foodinside/meat.html" target="_parent"><div class="food4"><span class="span4">제육볶음</span></div></a>
+    <a href="1foodinside/tteok.html" target="_parent"><div class="food5"><span class="span5">떡볶이</span></div></a>
+    <a href="1foodinside/rice.html" target="_parent"><div class="food6"><span class="span6">치킨마요덮밥</span></div></a>
+    </section>
+</body>
+</html>

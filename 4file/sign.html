@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        a
+        {
+            text-decoration: none;
+            color: inherit;
+        }
+        span:hover
+        {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .page
+        {
+            width: 1200px;
+            background-color: #faefe1;
+            margin: auto;
+        }
+        section
+        {
+            width: 100%;
+            text-align: center;
+        }
+        label
+        {
+            margin-left: 45px;
+            text-align: left;
+            color: #866b47;
+            font-weight: bold;
+            font-size: 14px;
+            display: block;
+        }
+        .name
+        {
+            width: 190px;
+            height: 23px;
+            margin-top: 40px;
+            margin-bottom: 0px;
+            font-size: 14px;
+            background-color: #fffef9;
+            color:#c98a38;
+            border: 1px solid #c2af96;
+        }
+        .text
+        {
+            width: 190px;
+            height: 23px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 14px;
+            background-color: #fffef9;
+            color:#c98a38;
+            border: 1px solid #c2af96;
+        }
+        .pass
+        {
+            width: 190px;
+            height: 23px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            margin-left: 0.5px;
+            font-size: 14px;
+            background-color: #fffef9;
+            border: 1px solid #c2af96;
+            color: #e2c7a4
+        }
+        .mail
+        {
+            width: 190px;
+            height: 23px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 14px;
+            background-color: #fffef9;
+            border: 1px solid #c2af96;
+            color: #e2c7a4
+        }
+        .call
+        {
+            width: 190px;
+            height: 23px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            margin-left: 0.5px;
+            font-size: 14px;
+            background-color: #fffef9;
+            border: 1px solid #c2af96;
+            color: #e2c7a4
+        }
+        fieldset
+        {
+            margin-top: 130px;
+            margin-left: 400px;
+            width: 350px;
+            height: 500px;
+            border: 2px solid #e2c7a4;
+            background-color: #faf6f1;
+        }
+        h1
+        {
+            color: #c98a38;
+            margin-top:40px;
+            font-size: 40px;
+            margin-bottom: 0px;
+        }
+        .submit
+        {
+            margin-top: 20px;
+            width: 257px;
+            height: 40px;
+            font-weight: bolder;
+            font-size: 20px;
+            background-color: #dfc39e;
+            color: #ece3d9;
+            border: 1px solid #c2af96;
+        }
+        .submit:hover
+        {
+            cursor: pointer;
+            background-color: #b89c77;
+            color: #d3c6b7;
+        }
+        span
+        {
+            font-size: 8px;
+            color: #e2bd8c;
+        }
+        p
+        {
+            margin-top: 2px;
+            color: #e2bd8c;
+        }
+    </style>
+</head>
+<body class="page">
+    <section>
+    <form>
+        <fieldset>
+            <h1>SIGN UP</h1>
+            <label>닉네임 &nbsp;&nbsp;&nbsp;<input type="text" name="name" class="name" placeholder="nickname" required></label>
+        <label>아이디 &nbsp;&nbsp;&nbsp;<input type="text" name="id" class="text" placeholder="ID" required></label>
+        <label>비밀번호 <input type="password" name="password" class="pass" placeholder="Password" required></label>
+        <label>비번확인 <input type="password" name="password" class="pass" placeholder="Password" required></label>
+        <label>이메일&nbsp; &nbsp;&nbsp;<input type="email" name="email" class="mail" placeholder="e-mail" required></label>
+        <label>전화번호 <input type="password" name="password" class="call" placeholder="tel" required></label>
+        <p><a href="./login.html"><span>로그인</span></p>
+        <input type="submit" value="회원가입" class="submit">
+
+    </fieldset>
+    </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frame2</title>
+    <style>
+        .page
+        {
+            width: 1200px;
+            margin: auto;
+        }
+        #header
+        {
+            width: 100%;
+            height: 112px;
+        }
+        #content2
+        {
+            float: left;
+            width: 85.5%;
+            height: 705px;
+            margin-top:6px;
+        }
+        #aside
+        {
+            float: right;
+            width: 13.7%;
+            height: 197px;
+            margin-left: 0px;
+            margin-top: 6px;
+        }
+        #memo2
+        {
+            float: right;
+            width: 13.6%;
+            height: 501px;
+            margin-left: 0px;
+            margin-top: 7px;
+        }
+        #footer
+        {
+            float: left;
+            width: 100%;
+            height: 90px;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body class="page">
+    <iframe id="header" src="../header.html" name="siteheader" frameborder="0">
+    </iframe>
+    <iframe id="content2" src="./2review.html" name="content2" frameborder="0">
+    </iframe>
+    <iframe id="aside" src="./2aside.html" name="aside2" frameborder="0">
+    </iframe>
+    <iframe id="memo2" src="./2memo.html" name="memo2" frameborder="0">
+    </iframe>
+    <iframe id="footer" src="../footer.html" name="sitefooter" frameborder="0">
+    </iframe>
+</body>
+</html>
